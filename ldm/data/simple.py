@@ -123,8 +123,8 @@ class FolderData(Dataset):
 def hf_dataset(
     name,
     image_transforms=[],
-    image_column="image",
-    text_column="text",
+    image_column="images",
+    text_column="attributes",
     split='train',
     image_key='image',
     caption_key='txt',
