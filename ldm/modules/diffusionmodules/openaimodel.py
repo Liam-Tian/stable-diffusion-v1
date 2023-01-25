@@ -742,6 +742,10 @@ class UNetModel(nn.Module):
         self.middle_block.apply(convert_module_to_f32)
         self.output_blocks.apply(convert_module_to_f32)
 
+    def freeze(self):
+        for param in self.parameters():
+            param.requires_grad = False
+
     def forward(self, x, timesteps=None, context=None, y=None,**kwargs):
         """
         Apply the model to an input batch.

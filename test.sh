@@ -14,4 +14,4 @@ python scripts/txt2img.py \
     --H 512 --W 512 \
     --n_samples 4 \
     --config 'configs/stable-diffusion/retail.yaml' \
-    --ckpt 'direction.ckpt'
+    --ckpt 'rotation.ckpt'

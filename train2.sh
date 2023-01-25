@@ -4,4 +4,5 @@ python match.py \
     --H 512 --W 512 \
     --n_samples 1 \
     --config 'configs/stable-diffusion/retail.yaml' \
-    --ckpt 'rotation.ckpt'
+    --ckpt 'rotation.ckpt' \
+    --fixed_code
